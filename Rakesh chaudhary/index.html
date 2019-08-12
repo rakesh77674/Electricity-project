@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Home Page</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	
+
+	<style type="text/css">
+		/*Background Image*/
+		#backgroundImage {
+			width: 100%;
+			height: 100vh;
+			background-image: url("Images/homeBackground.jpg");
+			background-size: 100vw 100vh;
+		}
+
+		/*Introduction text and landing image*/
+		#banner {
+			top: 36vh; 
+			position: absolute;
+		}
+
+		#banner h3 {
+			color: rgba(255,255,255,0.8);
+			font-family: 'Montserrat', sans-serif;
+			text-align: center;
+			width: 98vw;
+			font-weight: 300;
+			letter-spacing: 1px;
+			font-size: 23px;
+			line-height: 33px;	
+		}
+
+		#banner a .button{
+			background-color: #43a747;
+			border: none;
+			border-radius: 15px;
+			color: white;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-size: 18px;
+			cursor: pointer;
+			margin-left: 42vw;
+		}
+
+		#banner a .button:hover {
+			background: #3b9c3f;
+		}
+
+		/*About section */
+		#about {
+			font-family: Georgia,serif;	
+			font-size: 17px;
+		}
+
+		#about h1 {
+			text-align: center; 
+			color: #323643;
+		}
+
+		#about h3 {
+			color: #323643;
+		}
+
+		#about h4 {
+			border-left: 5px solid #C0B193; 
+			color: #C0B193; 
+			padding-left: 3px;
+		}
+
+		.emphasize {
+			text-align: center; 
+			color: #323643;
+		}
+	</style>
+</head>
+<body>
+	<header id="backgroundImage">
+		<!-- Creating a navbar -->
+		<nav>
+			<div class="logo">
+				<a href="#">
+					
+				</a>
+			</div>
+
+			<div class="menubar">
+				<ul style="transition: 1s">
+					<li><a href="#" style="color: #fecd08">Home</a></li>
+					<li><a href="Pages/blog.html">Blog</a></li>
+					<li><a href="Pages/cv.html">CV</a></li>
+					<li><a href="Pages/contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section id="banner">
+			<h3>Hi, I am Rakesh Chaudhary. <br>Let me surf you through my portfolio website.</h3>
+			<a href="#about">
+				<button class="button">
+					<i class="fa fa-play" aria-hidden="true" style="font-size: 14px; padding-right: 3px;"></i>
+					Know about me
+				</button>
+			</a>
+		</section>
+	</header>
+
+	<!-- Content of home page -->
+	<div class="content">
+		<section id="about">
+			<h1>KNOW ABOUT ME</h1>
+			<hr class="hrStyle">
+			<h4>About Me</h4>
+			<h3>Self-motivated and Open-minded Learner</h3>
+
+			<table style="width: 100%">
+				<tr>
+					<td rowspan="2" valign="top" style="padding-right: 20px">
+						<p>
+						Greetings from Rakesh Chaudhary, Nepal! I am a first year student of BSc (Hons) Computing at British college. Also I am working as a React JS developer at Innovate Tech. I am addicted to computer and my passion for Computer Science and technology emerged when my father first bought me a computer while I was at grade 4. At that time, I had very little knowledge of programming and designing, so QBASIC was the only programming language and Microsoft Paint was my designing platform. I used to spend whole day by writing simple QBASIC codes and modifying them to get desired output, drawing rough surrounding pictures, and playing computer games. As I grew older, my sense of Computer Science has also matured and lately I have been using advanced software such as Adobe Illustrator, Javascript for designing and coding.
+						</p>
+
+						<p>
+						Similarly, music has always been a release from the stress and frustration I feel from a long day and an empowerment I require the next day. Though listening to music was my hobby since childhood, I started pursuing music as a passion at grade 11, where I began learning guitar and vocal. Music and Computer have been inseparable part of my life, with which I can enjoy every moment.
+						</p>
+
+						<p class="emphasize">
+							<strong>I LIVE OFF code, design and music.</strong> 
+						</p>
+					</td>
+
+					<td>
+						<span>
+							<img src="Images/o.jpg" alt="My Photo" width="100%">
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>
+							<img src="Images/p.jpg" alt="My Photo" width="100%">
+						</span>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+
+	<!-- Creating consistent footer -->
+	<footer>
+		<section id="footer">
+			<ul>
+				<li><a target="_blank" href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a target="_blank" href="https://github.com/rakesh77674/Rakesh-Chaudhary" title="Github"><i class="fab fa-github"></i></a></li>
+				
+				<li><a target="_blank" href="https://https://www.youtube.com/" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+				
+			</ul>
+		</section>
+		<section id="copyright">
+			&#169 2019 Copyright: Rakesh Chaudhary
+		</section>
+	</footer>
+
+	<!-- Go to Top icon -->
+	<a href="#">
+		<img src="Images/top.png" alt="Go-to-top icon" id="scrollTop">
+	</a>
+
+	<script type="text/javascript">
+
+		// Function to change Navbar background color and display scroll top icon when top scroll is greater than 50
+		window.onscroll = function (){
+			var scrollPosY = window.pageYOffset;
+			var navBar = document.querySelector('nav');
+			var scrollTopIcon = document.getElementById("scrollTop");
+			if(scrollPosY > 50) {
+          		navBar.className = ('dark');
+          		scrollTopIcon.style.visibility = "visible";
+    		} 
+			else {
+         		navBar.className =  ('');
+         		scrollTopIcon.style.visibility =  "hidden";
+    		}
+		}
+
+	</script>
+</body>
+</html>

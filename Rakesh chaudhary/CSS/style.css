@@ -1,0 +1,152 @@
+/*Style on entire Website*/
+html, body {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+/*Header*/
+.header {
+	padding-bottom: 55px;
+}
+
+/*Logo and navbar*/
+.logo {
+	position: fixed;
+	float: left;
+	margin: 16px 36px;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	padding-bottom: 5px;
+	z-index: 1;
+}
+
+nav ul {
+	list-style: none;
+	color: #fff;
+	padding-right: 8vw;
+	text-align: right;
+	margin: 0;
+}
+
+nav.dark ul {
+	background: #303745;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li a {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+nav ul li a:hover {
+	color: #fecd08;
+}
+
+/*Page content*/
+.content {
+	width: 90%;
+	margin: 2em auto;
+	line-height: 30px;
+	text-align: justify;
+}
+
+/*Horizontal row style*/
+hr.hrStyle { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+
+hr.hrStyle:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+/*Create two columns where left takes 75% and right takes 25% space*/
+.leftColumn {   
+  float: left;
+  width: 70%;
+}
+
+.rightColumn {
+  float: left;
+  width: 25%;
+}
+		
+/*Clear float effect after each row for dividing columns*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Footer on page*/
+#footer {
+	background: #1D2331;
+}
+#footer ul {
+	display: inline-block;
+	text-align: center;
+	padding-left: calc(50% - 140px);
+}
+
+#footer ul li {
+	list-style: none;
+	float: left;
+	margin: 10px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #303745;
+	border-radius: 50%;
+	font-size: 25px;
+}
+
+#footer ul li a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+}
+
+#footer ul li a:hover {
+	text-decoration: none;
+	color: #fecd08;
+	transition: 0.5s;
+}
+
+#copyright {
+	background: #161D27;
+	color: rgba(255,255,255,0.8);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	padding: 10px;
+	padding-left: calc(50% - 100px);
+}
+
+/*Style on scroll to top icon*/
+#scrollTop {
+	position: fixed;
+	z-index: 1;
+	width: 30px;
+	right: 1%;
+	bottom: 2%;
+	cursor: pointer;
+	visibility: hidden;
+}

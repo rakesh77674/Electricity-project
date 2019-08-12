@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Blog</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	
+
+	<style type="text/css">
+		/*Title and Row styles*/
+		.title {
+			text-align: center;
+			font-size: 30px;
+			font-family: Georgia,serif;	
+			color: #323643;
+			margin: 20px 0 10px 0;
+		}
+
+		.row {
+			font-family: Georgia,serif;	
+		}
+
+		/*Paragraph text style*/
+		.paragraph {
+			text-align: justify; 
+			margin: 1em auto;
+			line-height: 26px;
+			font-size: 17px;
+		}
+
+		/*Card Effect for blog*/
+		.card {
+		   background-color: #eee;
+		   padding: 20px;
+		   margin: 10px 20px;
+		}
+
+		/*Creates the page responsive: when width is less than 800px, both left and right column takes 100% width*/
+		@media screen and (max-width: 800px) {
+		  .leftColumn, .rightColumn {   
+		    width: 100%;
+		    padding: 0;
+		  }
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<!-- Creating a navbar -->
+		<nav class="dark">
+			<div class="logo">
+				<a href="../index.html">
+					
+				</a>
+			</div>
+
+			<div class="menubar">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#" style="color: #fecd08">Blog</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Content of blog page -->
+	<h2 class="title">Technological Effects</h2>
+
+	<div class="row">
+	 	<div class="leftColumn">
+		    <div class="card">
+		      <h2>How has technology affected our social life?</h2>
+		      <h5>August 2, 2019</h5>
+		      <img src="../Images/blog-tech.jpg" alt="Technological Enhancement" width="80%" height="300px">
+		      <p class="paragraph">
+		      	Over few decades, technology has been developing rapidly. We can even analyze drastic changes on our soical lifestyles due to technological advancement if we simply compare our childhood where we used to play on fields and now where online game has been most popular. Meanwhile, it has been affecting almost every aspect of our social life.
+		      </p>
+
+		      <p class="paragraph">
+		      	Technology has made our world smaller. Now we are able to say that the world is a virtual village which has narrowed social and physical gap among people. For example, you can easily connect with people around the globe using social medias on Internet. Similarly, there has been massive improvement on the means we travel. In the meantime, we can visit across country or ocean with planes, trains and ships. Also it has significantly improved medical technologies on various fields like biotechnology, pharmaceuticals and artificial organ transplantation. Now life expectancy of people has increased globally because of quick diagnosis and treatment of diseases with the use of advanced technologies.
+		  	  </p>
+	    	</div>
+		</div>
+
+
+		<div class="rightColumn">
+		    <div class="card">
+		      <h3>About Me</h3>
+		      <img src="../Images/j.jpg" alt="My Photo" width="100%">
+		      <p class="paragraph">Hi, I am Rakesh Chaudhary, author of the blog. I have been performing research on technological advancement and its affect on day to day life. You can read my blogs here.</p>
+		    </div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="leftColumn">
+			<div class="card">
+				<h2>What are the impacts of technology on professional environment?</h2>
+		      	<h5>May 20, 2018</h5>
+		      	<img src="../Images/blog-work.jpg" alt="Technological Enhancement" width="80%" height="300px">
+		      	<p class="paragraph">
+		      	Since technological revolution, there has been a drastic change on working environment. Earlier when paid jobs where meant for men, now there has been plenty opportunities for women too as working method has been quite simpler. 
+		      	</p>
+		      	<p class="paragraph">
+		      	Technology has upgraded the working method across every industry. It has improved tedious and manual working methods to productive and automatic system. Also most of the jobs now are based on internet. Employees can work in a productive workspace and collaborate as an online team to perform any task at global level. People can interact with each other through internet where different public forums such as stack overflow are helping people to share their doubts and knowledge. Most importantly, creative and logical ideas have overtaken physical load of work.
+		      	</p>
+
+			    <p class="paragraph">
+			    With these impacts of technology on working mechanism, it has helped a lot for gender equality. Also people have been smarter and can collaborate with world to accomplish any task.
+			    </p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Creating consistent footer -->
+	<footer>
+		<section id="footer">
+			<ul>
+				<li><a target="_blank" href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a target="_blank" href="https://github.com/rakesh77674/Rakesh-Chaudhary" title="Github"><i class="fab fa-github"></i></a></li>
+				
+				<li><a target="_blank" href="https://https://www.youtube.com/" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+				
+			</ul>
+		</section>
+		<section id="copyright">
+			&#169 2019 Copyright: Rakesh Chaudhary
+		</section>
+	</footer>
+
+	<!-- Go to Top icon -->
+	<a href="#">
+		<img src="../Images/top.png" alt="Go-to-top icon" id="scrollTop">
+	</a>
+
+	<script src="../Javascript/portfolio.js"></script>
+</body>
+</html>

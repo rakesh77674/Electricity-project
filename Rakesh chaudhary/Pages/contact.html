@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Contact</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	
+
+	<style type="text/css">
+		/*Style on contact content*/
+		.contact {
+			padding: 20px 15%;
+			font-family: Georgia,serif;
+		}
+
+		/*Style on input, select and textarea tags*/
+		input, select, textarea {
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		}
+
+		/*Styles on Text Area*/
+		.textArea {
+			height:100px; 
+			width: 100%; 
+			resize: none;
+		}
+
+		/*Styles on error message*/
+		.errorMessage {
+			color: red; 
+			margin: 0 0 5px 0;
+		}
+
+
+		/*styles on button id*/
+		#button {
+			background-color: #1D2331;
+			border: none;
+			border-radius: 15px;
+			color: white;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-size: 18px;
+			cursor: pointer;
+		}
+
+		#button:disabled {
+			color: #9e9898;
+			cursor: context-menu;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<!-- Creating a navbar -->
+		<nav class="dark">
+			<div class="logo">
+				<a href="../index.html">
+					
+				</a>
+			</div>
+
+			<div class="menubar">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="#" style="color: #fecd08">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Content of contact page -->
+	<div class="contact">
+		<div style="font-family: 'Montserrat', sans-serif;">
+			<h2 style="margin-bottom: 5px">Contact Form</h2>
+			<h4 style="margin-top: 5px">Please fill in the form and I will be contacting you soon.</h4>
+		</div>
+
+		<form onsubmit="submitForm(event)" id="formId" name="contactForm">
+			<table>
+				<tr>
+					<td valign="inherit" width="16%"><label for="firstName">Your Name*</label></td>
+					<td>
+						<input type="text" id="firstName" name="firstName" placeholder="First Name">
+						<input type="text" id="middleName" name="middleName" placeholder="Middle Name (Optional)">
+						<input type="text" id="lastName" name="lastName" placeholder="Last Name">
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="inherit" width="16%"><label>Gender</label></td>
+					<td>
+						<input type="radio" name="gender" value="male" id="male"> <label for="male">Male</label>
+						<input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label>
+						<input type="radio" name="gender" value="other" id="other" checked> <label for="other">Other</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="inherit" width="16%"><label for="email">Email*</label></td>
+					<td>
+						<input type="Email" name="email" id="email" placeholder="E.g. contactme@gmail.com" style="width: 60%">
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<input type="checkbox" name="mailContact" id="mailContact"><label for="mailContact"> Do you wish to receive regular updates from me? </label>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="inherit" width="16%"><label for="phone">Phone*</label></td>
+					<td>
+						<input type="tel" id="phone" name="phone" placeholder="E.g. +9779845123456" style="width: 60%" onchange="validatePhone()"> <br>
+						<h5 class="errorMessage" id="phoneMessage"></h5>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="inherit" width="16%"><label for="subject">Subject</label></td>
+					<td>
+						<select id="subject" name="subject">
+					      <option value="feedback">Feedback</option>
+					      <option value="compliment">Compliment</option>
+					      <option value="other">Other</option>
+					    </select>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="inherit" width="16%"><label for="message">Message</label></td>
+					<td><textarea id="message" name="message" class="textArea" placeholder="Your Message (Optional)"></textarea></td>
+				</tr>
+			</table>
+
+			<button id="button" type="Submit">Submit</button>
+		</form>
+	</div>
+
+	<!-- Creating consistent footer -->
+	<footer>
+		<section id="footer">
+			<ul>
+				<li><a target="_blank" href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a target="_blank" href="https://github.com/rakesh77674/Rakesh-Chaudhary" title="Github"><i class="fab fa-github"></i></a></li>
+				
+				<li><a target="_blank" href="https://https://www.youtube.com/" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+				
+			</ul>
+		</section>
+		<section id="copyright">
+			&#169 2019 Copyright: Rakesh Chaudhary
+		</section>
+	</footer>
+
+	<!-- Go to Top icon -->
+	<a href="#">
+		<img src="../Images/top.png" alt="Go-to-top icon" id="scrollTop">
+	</a>
+
+	<script src="../Javascript/portfolio.js"></script>
+
+	<script type="text/javascript">
+		// Function to handle event when submit button is clicked
+		function submitForm(event) {
+			event.preventDefault();
+
+			var firstName = document.forms["contactForm"]["firstName"].value;
+			var lastName = document.forms["contactForm"]["lastName"].value;
+			var email = document.forms["contactForm"]["email"].value;
+			var phone = document.forms["contactForm"]["phone"].value;
+
+			if (firstName === "" || lastName === "" || email === "" || phone === "") {
+				alert("Please fill in all required fields!");
+			} 
+			else {
+				successfulSubmit();
+			}		
+		}
+
+		// Function to disable form after submission
+		function successfulSubmit() {
+			document.getElementById("button").innerHTML = "Thank you for your response";
+			document.getElementById("button").disabled = true;
+
+			var form  = document.getElementById("formId");
+			var allElements = form.elements;
+			var l = allElements.length
+			for (var i = 0; i < l; ++i) {
+			    allElements[i].disabled = true;
+			}
+		}
+
+		// Function to validate phone number
+		function validatePhone() {
+			var element = document.getElementById("phone").value;
+			var regex = /^[\+\d]{10,}$/
+
+			document.getElementById("button").disabled = false;
+				document.getElementById("phoneMessage").innerHTML = "";
+				document.getElementById("phone").style.border = "1px solid #ccc";
+
+			if (element.length > 0) {
+				if (!regex.test(element)) {
+					document.getElementById("button").disabled = true;
+					document.getElementById("phone").style.border = "1px solid red";
+					document.getElementById("phoneMessage").innerHTML = "Phone number must be at least 10 characters and can contain only '+' or (0 to 9)";
+				}
+			}
+		}
+	</script>
+</body>
+</html>
